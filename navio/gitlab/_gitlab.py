@@ -1,15 +1,13 @@
 import os
-from requests.auth import HTTPBasicAuth
 import requests
 from datetime import datetime, timedelta
-from gitlab import Gitlab
+import gitlab
 
 
 class Gitlab():
 
-    def __init__(self, **kwargs):
-        self.gitlab = Gitlab(os.environ['CI_API_V4_URL'], job_token=os.environ['CI_JOB_TOKEN'])
-        pass
+    def __init__(self):
+        self.gitlab = gitlab.Gitlab(os.environ['CI_API_V4_URL'], job_token=os.environ['CI_JOB_TOKEN'])
 
     def is_gitlab(self):
         if os.environ.get('CI', 'false') == 'true':
