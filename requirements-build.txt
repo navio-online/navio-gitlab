@@ -1,0 +1,5 @@
+pytest>=3.5
+pycodestyle>=2.3
+twine
+navio-builder
+requests
