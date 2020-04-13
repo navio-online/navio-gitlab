@@ -1,10 +1,9 @@
 ---
-dist: xenial
-sudo: true
 language: python
 python:
   - '2.7'
   - '3.7'
+  - '3.8'
 env:
   global:
     - secure: ZCgbV4LuqpVvc1MwHXq6P8O52l4uQRCnU7rMGNtchEj2fmFbi6eisE+nAZxS6YNMlyMCXQkgM5Snxu9VGAxEcGFGHUY7MfnwSisGR8s+CNFtUyUBExfIgguDrp2VODgcGBhg02qSEY4B2JjoJbCvZ8eo8ICZ2FOSAafyTWlfpAYssU+Oy5G6R/NPeVHra++SOXP2aGaaYJUniFOrIbCocLEgzLcDcipNrlo6jiO7h0pgwH/PCd9PUJMKivT68GHsg1O6NH4AzDaRtO+qB5njENijuJNZ1IvbM7beV6MxKJQ7yczyVwyhJCApKt5sQNVS4pinFsclea5nnfJvCcUdSq2B+eYfPx9mXrMnMFw2uAZ/PCBhdelofwpnz2MJeSypLGg1oaJn2FHBYS2X3dOrskDNmcaSe55IaZ5D9Xa+Pm8Gv6ev4gsZ+9dIfVRW/DZSa3sPCeyDa8ENaZrr12gVtQurYprfFkF1Zl0PSn4d3ZVVs8pnuNm0hgEie/xdYFo5WdNIb4RQFA61pFMFbeKZadTfBSKqLJ0pWZTJeBkF59TSBBhYbIUca8nQ7oHJFtxj3i/f/kSsXZE5gj/BE+5CwE0+1e3t8fsFNIssQIu4xG9Vm2pQOHY9+99swFW5iPR5y84kgUNDSut8ZGOCtx91hFJx7R/sZdVZjKCgvkUiSSM=
