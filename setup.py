@@ -7,7 +7,7 @@ setup(
     author_email='oss@navio.online',
     url=navio.meta_gitlab.__website__,
     packages=['navio', 'navio.gitlab'],
-    install_requires=['requests'],
+    install_requires=['python-gitlab'],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     license='Apache 2.0 license',
