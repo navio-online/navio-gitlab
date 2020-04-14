@@ -57,7 +57,7 @@ class Gitlab():
         except gitlab.exceptions.GitlabGetError as e:
             if e.response_code == 404:
                 prj.variables.create({'key': 'BUILD_NUMBER', 'value': '0'})
-                return
+
         var.value = str(int(var.value) + 1)
         var.save()
 
