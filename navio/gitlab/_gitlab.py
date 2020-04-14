@@ -7,7 +7,7 @@ import gitlab
 class Gitlab():
 
     def __init__(self):
-        self.gitlab = gitlab.Gitlab(os.environ['CI_API_V4_URL'], job_token=os.environ['CI_JOB_TOKEN'])
+        self.gitlab = gitlab.Gitlab('https://gitlab.com', job_token=os.environ['CI_JOB_TOKEN'])
 
     def is_gitlab(self):
         if os.environ.get('CI', 'false') == 'true':
