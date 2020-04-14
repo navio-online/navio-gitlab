@@ -58,7 +58,7 @@ class Gitlab():
             if e.response_code == 404:
                 prj.variables.create({'key': 'BUILD_NUMBER', 'value': '0'})
                 return
-        var.value = var.value + 1
+        var.value = int(var.value) + 1
         var.save()
 
-        return var.value
+        return int(var.value)
