@@ -12,11 +12,6 @@ class TestImport:
 
 class Test:
 
-    @pytest.fixture(scope="session", autouse=True)
-    def init(self):
-        os.environ['CI_API_V4_URL'] = 'https://gitlab.com'
-        os.environ['CI_JOB_TOKEN'] = '.....'
-
     def test_is_gitlab(self):
         from navio.gitlab import Gitlab
 
